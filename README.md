@@ -37,4 +37,55 @@ chmod 600 ~/.jira_credentials
 
 Modify url, project, sprint, etc in JiraLite/Config/Jira.pm to fit your environment.
 
-##
+## Usage
+
+```
+batman@thecave:~# jl -h
+
+    Usage: /usr/bin/jl <verb> <args> ...
+
+      # Help (this)
+      <h|help>
+
+      # View issue information
+      <v|view> <TID>
+      view XXX-000
+
+      # Create new issue (interactive)
+      <c|create>
+
+      # Delete an issue
+      <d|delete> <TID>
+      delete XXX-000
+
+      # Create a comment on an issue
+      <com|comment> <TID> <comment>
+      comment XXX-000 "This is a comment"
+
+      # Assign issue to a user
+      <a|assign> <TID> <none|brianh|mo|lukasz|nate>
+      assign XXX-000 nate
+
+      # Transition an issue to a new status
+      <s|status> <TID> <"To Do"|Design|Development|Review|Stage|Done>
+      status XXX-000 Review
+
+      # Rush issue to Done status
+      <r|rush> <TID>
+      rush XXX-000
+
+      # Update an issue type
+      <t|type> <TID> <Improvement|"New Feature"|"Hot Potato"|Task>
+      type XXX-000 "Hot Potato"
+
+      # Update an issue priority
+      <p|priority> <TID> <Blocker|Critical|Major|Minor|Trivial>
+      priority XXX-000 Blocker
+
+      # Update an issue sprint (View an issue in sprint and look for [#] by sprint. Ex: Sprint 201502-A [23> has id 23.)
+      <spr|sprint> <TID> <SID|none>
+      sprint XXX-000 23
+
+    Options:
+      -h, --help      How to use this application
+```
