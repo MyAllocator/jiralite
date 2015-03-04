@@ -12,7 +12,7 @@ ln -s ~/Downloads/jiralite/jiralite.pl /usr/bin/js
 js -h
 ```
 
-If code resides outside of $INC:
+If code resides outside of @INC:
 
 ```
 export PERL5LIB=$PERL5LIB:/dir/to/jiralite
