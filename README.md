@@ -16,9 +16,9 @@ js -h
 
 The following perl packages are required:
 
-JIRA::Client::Automated (https://metacpan.org/pod/JIRA::Client::Automated)
-CLI::Framework (https://metacpan.org/pod/CLI::Framework)
-Term::Prompt (https://metacpan.org/pod/Term::Prompt)
+1. JIRA::Client::Automated (https://metacpan.org/pod/JIRA::Client::Automated)
+2. CLI::Framework (https://metacpan.org/pod/CLI::Framework)
+3. Term::Prompt (https://metacpan.org/pod/Term::Prompt)
 
 ```
 cpanm JIRA::Client::Automated
