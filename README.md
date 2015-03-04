@@ -34,7 +34,18 @@ cpanm Term::Prompt
 
 ## Configuration
 
+Setup environment variables
+(you might even consider adding them to your ~/.bashrc)
+
+```
+export JIRALITE_PROJECT="" ##  Ex. MYAL for MYAL-123 tickets
+export JIRALITE_URL="https://your_domain.atlassian.net/"  ## 
+export JIRALITE_SPRINT="201503A"
+export JIRALITE_SPRINT_ID="23"
+```
+
 Jira credentials are read from ~/.jira_credentials (username:password).
+
 
 ```
 echo "your_username:your_password" > ~/.jira_credentials
